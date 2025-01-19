@@ -107,6 +107,8 @@ function M.select_compiler_args(repo, compiler)
       "-shared",
       "-Os",
       "-std=c11",
+      "-target",
+      "x86_64-windows",
     }
   else
     local args = {
